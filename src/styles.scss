@@ -1,13 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: rgb(29, 93, 204); }
 
 .container{
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: rgb(29, 93, 204);
 }
 
 .content-container{
