@@ -15,7 +15,10 @@ export class ListComponent {
   newItem = '';
 
   addItem() {
-    if (this.newItem.trim()) {
+    if  (this.newItem === ''){
+      alert('Preencha o campo item corretamente')
+    }
+    else if (this.newItem.trim()) {
       this.shoppingList.push({ name: this.newItem, completed: false });
       this.newItem = '';
     }

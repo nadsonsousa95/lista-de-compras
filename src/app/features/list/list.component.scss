@@ -1,0 +1,33 @@
+.container{
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 8px;
+    border-radius: 8px;
+}
+
+button{
+    background-color: rgb(18, 78, 141);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  rgb(41, 116, 196);
+}
+
+.naocomprados ul li{
+    text-decoration: none;
+    border-bottom: solid 1px gray;
+    justify-content: space-between;
+}
+

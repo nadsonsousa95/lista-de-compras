@@ -5,14 +5,16 @@
     </form>
   
     <h2>Itens Não Comprados</h2>
-    <ul>
-      <li *ngFor="let item of shoppingList; let i = index">
-        {{ item.name }}
-        <button (click)="markAsBought(i)">Marcar como Comprado</button>
-        <button (click)="editItem(i)">Editar</button>
-        <button (click)="deleteItem(i)">Excluir</button>
-      </li>
-    </ul>
+    <div class="naocomprados">
+        <ul>
+        <li *ngFor="let item of shoppingList; let i = index">
+            {{ item.name }}
+            <button (click)="markAsBought(i)">Marcar como Comprado</button>
+            <button (click)="editItem(i)">Editar</button>
+            <button (click)="deleteItem(i)">Excluir</button>
+        </li>
+        </ul>
+    </div>
   
     <h2>Itens Comprados</h2>
     <ul>
