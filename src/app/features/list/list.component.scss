@@ -6,6 +6,8 @@
     flex-direction: column;
 }
 
+form{margin-top: 20px;}
+
 input{
     padding: 8px;
     border-radius: 8px;
@@ -21,13 +23,45 @@ button{
     cursor: pointer;
 }
 
+#comprou{background-color: rgb(17, 144, 17);}
+#comprou:hover{background-color: rgb(10, 78, 10);}
+
+#Excluir{ background-color: rgb(190, 21, 21);}
+
+#Excluir:hover{
+    background-color: rgb(120, 13, 13);
+}
+
 button:hover{
     background-color:  rgb(41, 116, 196);
+    transition: 0.1s;
+}
+
+.naocomprados{
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .naocomprados ul li{
     text-decoration: none;
     border-bottom: solid 1px gray;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.naocomprados .botoes-edicao-item{
+    text-align: right;
+
+}
+.naocomprados .botoes-edicao-item button{
+    margin: 0, 0.5px;
 }
 
+
+ul{
+    text-decoration: none;
+}
+
+.comprados ul li{
+    border-bottom: solid 1px gray;
+}

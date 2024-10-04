@@ -4,24 +4,28 @@
       <button type="submit">Adicionar</button>
     </form>
   
-    <h2>Itens Não Comprados</h2>
     <div class="naocomprados">
+        <h2>Itens da Lista</h2>
         <ul>
         <li *ngFor="let item of shoppingList; let i = index">
             {{ item.name }}
-            <button (click)="markAsBought(i)">Marcar como Comprado</button>
+            <div class="botoes-edicao-item">
+            <button id="comprou" (click)="markAsBought(i)">Marcar como Comprado</button>
             <button (click)="editItem(i)">Editar</button>
-            <button (click)="deleteItem(i)">Excluir</button>
+            <button id="Excluir" (click)="deleteItem(i)">Excluir</button>
+            </div>
         </li>
         </ul>
     </div>
   
-    <h2>Itens Comprados</h2>
-    <ul>
-      <li *ngFor="let item of purchasedItems">
-        {{ item.name }}
-      </li>
-    </ul>
+    <div class="comprados">
+        <h2>Itens Comprados</h2>
+        <ul>
+        <li *ngFor="let item of purchasedItems">
+            {{ item.name }}
+        </li>
+        </ul>
+    </div>
   </div>
   
   
