@@ -4,3 +4,14 @@
     justify-content: center;
     text-align: center;
 }
+
+.title-box{
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.title-box i{
+    margin-left: 10px;
+}

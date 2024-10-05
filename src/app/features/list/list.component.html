@@ -10,9 +10,9 @@
         <li *ngFor="let item of shoppingList; let i = index">
             {{ item.name }}
             <div class="botoes-edicao-item">
-            <button id="comprou" (click)="markAsBought(i)">Marcar como Comprado</button>
-            <button (click)="editItem(i)">Editar</button>
-            <button id="Excluir" (click)="deleteItem(i)">Excluir</button>
+            <i id="comprou" class="fa-solid fa-circle-check" (click)="markAsBought(i)"></i>
+            <i id="Editar" class="fa-solid fa-pen-to-square" (click)="editItem(i)"></i>
+            <i id="Excluir" class="fa-solid fa-trash" (click)="deleteItem(i)"></i>
             </div>
         </li>
         </ul>

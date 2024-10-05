@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-form{margin-top: 20px;}
+form{margin-top: 20px; text-align: center;}
 
 input{
     padding: 8px;
@@ -23,16 +23,22 @@ button{
     cursor: pointer;
 }
 
-#comprou{background-color: rgb(17, 144, 17);}
-#comprou:hover{background-color: rgb(10, 78, 10);}
-#Excluir{ background-color: rgb(190, 21, 21);}
-
-#Excluir:hover{
-    background-color: rgb(120, 13, 13);
+i{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
 }
+/*Icones*/
+#comprou{color: rgb(17, 144, 17); margin-left: 5px;}
+#comprou:hover{color: rgb(10, 78, 10);}
+#Excluir{color: rgb(190, 21, 21); margin-left: 5px;}
+#Excluir:hover{color: rgb(120, 13, 13);}
+#Editar{color:  rgb(18, 78, 141); margin-left: 5px;}
+#Editar:hover{color:  #2974c4;}
 
 h2{
     color: rgb(18, 78, 141);
+    text-align: center;
 }
 
 button:hover{
@@ -63,4 +69,10 @@ ul{
 }
 .comprados ul li{
     border-bottom: solid 1px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    text-align: center;
 }
