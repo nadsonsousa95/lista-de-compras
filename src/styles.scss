@@ -14,9 +14,20 @@ app-header{
 }
 
 .content-container{
-    width: 100%;
     max-width: 760px;
     text-align: center;
+    width: 100%;
 }
 
+@media (max-width: 760px){
+    .content-container{
+        max-width: 600px;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+}
 

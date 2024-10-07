@@ -46,6 +46,13 @@ button:hover{
     transition: 0.1s;
 }
 
+.completed {
+    color: rgb(19, 124, 14); 
+    text-decoration: line-through;
+    font-weight: medium;
+  }
+  
+
 .naocomprados{
     margin-bottom: 20px;
     margin-top: 30px;
@@ -58,6 +65,7 @@ button:hover{
     justify-content: space-between;
     align-items: center;
 }
+
 .naocomprados .botoes-edicao-item{
     text-align: right;
 }
@@ -75,4 +83,11 @@ ul{
     margin: 5px;
     justify-content: center;
     text-align: center;
+}
+
+@media (max-widh:760px) {
+    .naocomprados ul li{
+        justify-content: center;
+    }
+
 }
