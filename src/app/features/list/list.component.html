@@ -10,9 +10,9 @@
         <li *ngFor="let item of shoppingList; let i = index" [ngClass]="{'completed': item.completed}">
             {{ item.name }}
             <div class="botoes-edicao-item">
-            <i id="comprou" class="fa-solid fa-circle-check" (click)="markAsBought(i)"></i>
-            <i id="Editar" class="fa-solid fa-pen-to-square" (click)="editItem(i)"></i>
-            <i id="Excluir" class="fa-solid fa-trash" (click)="deleteItem(i)"></i>
+                <img class="comprou" src="assets/circle-check-solid (2).svg" (click)="markAsBought(i)"/>
+                <img class="Editar" src="assets/pen-to-square-solid (1).svg" (click)="editItem(i)"/>
+                <img class="Excluir" src="assets/trash-solid (1).svg" (click)="deleteItem(i)"/>
             </div>
         </li>
         </ul>

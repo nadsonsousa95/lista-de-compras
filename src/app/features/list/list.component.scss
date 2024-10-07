@@ -23,18 +23,17 @@ button{
     cursor: pointer;
 }
 
-i{
+
+/*Icones*/
+img{
     cursor: pointer;
-    font-size: 20px;
+    width: 20px;
     margin: 10px;
 }
-/*Icones*/
-#comprou{color: rgb(17, 144, 17); margin-left: 5px;}
-#comprou:hover{color: rgb(10, 78, 10);}
-#Excluir{color: rgb(190, 21, 21); margin-left: 5px;}
-#Excluir:hover{color: rgb(120, 13, 13);}
-#Editar{color:  rgb(18, 78, 141); margin-left: 5px;}
-#Editar:hover{color:  #2974c4;}
+img:hover{filter:saturate(3)}
+
+.comprou{width: 23px;}
+.Editar{width: 23px;}
 
 h2{
     color: rgb(18, 78, 141);
@@ -66,10 +65,12 @@ button:hover{
     align-items: center;
 }
 
-.naocomprados .botoes-edicao-item{
+.botoes-edicao-item{
     text-align: right;
+    justify-content: baseline;
 }
-.naocomprados .botoes-edicao-item button{
+
+.naocomprados .botoes-edicao-item img{
     margin: 0, 0.5px;
 }
 ul{
