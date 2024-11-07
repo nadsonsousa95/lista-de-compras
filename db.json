@@ -1,21 +1,7 @@
 {
-    "users": [
-      { "id": 1, "name": "Alice", "email": "alice@exemplo.com" },
-      { "id": 2, "name": "Bob", "email": "bob@exemplo.com" }
-    ],
-    "shopping-list": [
-      {
-        "id": 1,
-        "title": "Comprar leite",
-        "userId": 1,
-        "included": false
-      },
-      {
-        "id": 2,
-        "title": "Comprar pão",
-        "userId": 2,
-        "included": false
-      }
+    "items": [
+      { "id": 1, "name": "Leite", "purchased": false },
+      { "id": 2, "name": "Pão", "purchased": true }
     ]
   }
   

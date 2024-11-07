@@ -1,0 +1,32 @@
+<div class="shopping-list">
+    <h2>Lista de Compras</h2>
+    <form (submit)="addItem()">
+      <input 
+        type="text" 
+        [(ngModel)]="newItem" 
+        placeholder="Novo item" 
+        required 
+        name="newItem"
+      />
+      <button type="submit">Adicionar</button>
+    </form>
+  
+    <h3>Não Comprados</h3>
+    <ul>
+      <li *ngFor="let item of notPurchasedItems">
+        {{ item.name }}
+        <button (click)="togglePurchased(item.id, true)">Marcar como Comprado</button>
+        <button (click)="deleteItem(item.id)">Excluir</button>
+      </li>
+    </ul>
+  
+    <h3>Comprados</h3>
+    <ul>
+      <li *ngFor="let item of purchasedItems">
+        {{ item.name }}
+        <button (click)="togglePurchased(item.id, false)">Desmarcar</button>
+        <button (click)="deleteItem(item.id)">Excluir</button>
+      </li>
+    </ul>
+  </div>
+  

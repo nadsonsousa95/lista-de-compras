@@ -1,0 +1,14 @@
+<!-- list-item.component.html -->
+<li [class.purchased]="item.purchased">
+    <span *ngIf="!editing" (click)="togglePurchased()" [title]="item.purchased ? 'Desmarcar' : 'Marcar como comprado'">
+      {{ item.name }}
+    </span>
+    
+    <input *ngIf="editing" [(ngModel)]="editedName" />
+    
+    <button *ngIf="!editing" (click)="startEditing()">Editar</button>
+    <button *ngIf="editing" (click)="saveEdit()">Salvar</button>
+    <button *ngIf="editing" (click)="cancelEdit()">Cancelar</button>
+    <button (click)="deleteItem()">Excluir</button>
+  </li>
+  
